@@ -32,11 +32,8 @@ export default {
 
 .loading-spinner.overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.9);
+  inset: 0;
+  background: rgb(255 255 255 / 90%);
   z-index: 9999;
 }
 
@@ -59,6 +56,7 @@ export default {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

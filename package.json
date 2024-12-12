@@ -8,7 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore .",
-    "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
+    "lint:style": "stylelint \"**/*.{vue,css,scss}\" --fix",
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:style && yarn lint:prettier",
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix && yarn lint:style --fix",
@@ -34,8 +34,8 @@
     "@babel/eslint-parser": "^7.19.1",
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
-    "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/eslint-config": "^11.0.0",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/eslint-module": "^3.1.0",
     "@nuxtjs/stylelint-module": "^4.1.0",
     "eslint": "^8.24.0",
@@ -44,10 +44,10 @@
     "eslint-plugin-vue": "^9.5.1",
     "postcss-html": "^1.5.0",
     "prettier": "^2.7.1",
-    "stylelint": "^14.13.0",
+    "stylelint": "^16.11.0",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-recommended-vue": "^1.4.0",
-    "stylelint-config-standard": "^28.0.0",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "^36.0.1",
     "typescript": "^5.3.3"
   }
 }

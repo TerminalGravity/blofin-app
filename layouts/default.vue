@@ -27,8 +27,7 @@ html {
     'Helvetica Neue', Arial, sans-serif;
   box-sizing: border-box;
   font-size: 16px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -56,7 +55,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
 }
 
 .nav-brand {
@@ -81,16 +80,37 @@ body {
 
 .nav-link:hover {
   color: #007bff;
-  background: rgba(0, 123, 255, 0.1);
+  background: rgb(0 123 255 / 10%);
 }
 
 .nuxt-link-exact-active {
   color: #007bff;
-  background: rgba(0, 123, 255, 0.1);
+  background: rgb(0 123 255 / 10%);
 }
 
 .main-content {
   flex: 1;
   padding: 2rem;
+}
+
+/* Add empty line before each rule */
+
+.some-class {
+  font-family: 
+    Arial,
+    Helvetica,
+    sans-serif;
+  background: 
+    linear-gradient(to right,
+      rgb(0 0 0 / 50%),
+      rgb(0 0 0 / 80%)
+    );
+}
+
+/* Ensure proper spacing in media queries */
+@media (width <= 768px) {
+  .some-class {
+    /* styles */
+  }
 }
 </style>

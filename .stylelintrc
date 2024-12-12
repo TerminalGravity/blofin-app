@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-vue",
+    "stylelint-config-prettier"
+  ],
+  "customSyntax": "postcss-html",
+  "rules": {
+    "at-rule-no-unknown": null,
+    "no-descending-specificity": null,
+    "property-no-vendor-prefix": null
+  }
+} 
