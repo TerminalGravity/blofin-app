@@ -1,0 +1,6 @@
+[install]
+peer = true
+production = false
+
+[install.scopes]
+nuxtjs = "https://registry.npmjs.org/" 
