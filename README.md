@@ -14,9 +14,8 @@ A modern web application for BloFin's cryptocurrency trading platform, providing
 
 ### Prerequisites
 
-- Node.js (v14 or higher recommended)
+- Bun (latest version recommended)
 - Docker and Docker Compose (for containerized development)
-- npm or yarn
 
 ### Environment Configuration
 
@@ -34,17 +33,17 @@ API Endpoints:
 
 ```bash
 # install dependencies
-$ npm install
+$ bun install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+$ bun run dev
 
 # build for production and launch server
-$ npm run build
-$ npm run start
+$ bun run build
+$ bun run start
 
 # generate static project
-$ npm run generate
+$ bun run generate
 ```
 
 ### Docker Setup
@@ -53,7 +52,7 @@ $ npm run generate
 
 ```bash
 # Run the development environment
-$ npm run docker:dev
+$ bun run docker:dev
 # or
 $ docker-compose up
 
@@ -65,7 +64,7 @@ $ docker-compose up --build
 
 ```bash
 # Run the production environment
-$ npm run docker:prod
+$ bun run docker:prod
 # or
 $ docker-compose -f docker-compose.prod.yml up
 
@@ -73,20 +72,19 @@ $ docker-compose -f docker-compose.prod.yml up
 $ docker-compose -f docker-compose.prod.yml up --build
 
 # View logs
-$ npm run docker:logs
+$ bun run docker:logs
 
 # Stop containers
-$ npm run docker:stop
+$ bun run docker:stop
 ```
 
 ### Development Tools
 
-- **TypeScript**: Type checking and enhanced IDE support
+- **TypeScript**: Full TypeScript support for enhanced type safety and developer experience
 - **ESLint**: JavaScript/TypeScript linting with Vue.js specific rules
 - **Prettier**: Consistent code formatting
 - **StyleLint**: CSS/SCSS linting for maintainable styles
-- **Husky**: Git hooks for code quality
-- **CommitLint**: Conventional commit message enforcement
+- **Bun**: Fast JavaScript/TypeScript runtime and package manager
 
 ## Project Structure
 
@@ -153,3 +151,4 @@ For detailed explanation on how things work, check out:
 
 - [BloFin API Documentation](https://blofin.com/docs)
 - [Nuxt.js Documentation](https://nuxtjs.org)
+- [Bun Documentation](https://bun.sh)
